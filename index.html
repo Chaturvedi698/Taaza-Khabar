@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taaza Khabar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        
+        <div class="main-nav flex">
+            <div class="demo2">
+
+                <a href="#" onclick="reload()" class="logo">
+                    <img src="./Assests/Screenshot 2023-07-21 102711.png" alt="logo" >
+                </a>
+            </div>
+            
+            <div class="demo  container flex">
+            <div class="nav-links">
+                <ul class="flex">
+                        <li class="hover-link nav-item" id="Tech"  onclick="onNavItemClick('Tech')">Tech</li>
+                        <li class="hover-link nav-item" id="Bigg-Boss" onclick="onNavItemClick('Bigg-Boss')">BIG BOSS</li>
+                        <li class="hover-link nav-item"id="Cricket" onclick="onNavItemClick('Cricket')">Cricket</li>
+                    </ul>
+                </div>
+                <div class="search-bar ">
+                    <input type="text" id="search-text" class="news-input" placeholder="e.g. Science">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+        
+    </main>
+    <template id="template-news-card">
+        
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                        </div>
+                        <div class="card-content">
+                            <h3 id="news-title">This is the Title</h3>
+                            <h6 id="news-source" itemid="news-source">End Gadget 26/08/20223</h6>
+                            <p class="news-dec" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi dolores est voluptate quasi odio aliquam inventore totam provident, quos dignissimos nobis? Fuga ipsa amet accusantium nisi! Recusandae, voluptatibus doloribus.</p>
+                        </div>
+                    </div>
+    </template>
+    
+    <script src="index.js"></script>
+</body>
+</html>
